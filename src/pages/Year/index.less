@@ -1,0 +1,80 @@
+.yearBill {
+  padding: 10px;
+  .yearContent {
+    height: 180px;
+    margin-top: 10px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    // background-color: burlywood;
+    background-image: url("../../assets/billBg.jpeg");
+    background-size: cover;
+    .yearBillTitle {
+      display: flex;
+      font-weight: 600;
+      height: 20px;
+      flex-direction: row;
+      align-items: center;
+      .billIconWrap{
+        margin-left: 10px;
+        height: 20px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        .billIcon {
+          margin-top: -4px;
+          position: absolute;
+          // right: 50px;
+          // top: 150px;
+          content: "";
+          display: inline-block;
+          height: 6px;
+          width: 6px;
+          border-width: 0 2px 2px 0;
+          border-color: #000;
+          border-style: solid;
+          transform: matrix(0.71,0.71,-.71,0.71,0,0);
+          -webkit-transform: matrix(0.71,0.71,-.71,0.71,0,0);
+        
+        }
+        .expand {
+          margin-top: 4px;
+          border-width:2px 0 0 2px;
+        }
+        // 上箭头:border-width:2px002px;
+        // 右箭头:border-width:2px 2px00;
+        // 下箭头:border-width:0 2px 2px 0;
+        // 左箭头:border-width:00 2px 2px;
+
+        
+      }
+
+
+    }
+
+    .yearBillDetail {
+      display: flex;
+      margin-top: 30px;
+      font-size: 16px;
+      font-weight: 500;
+      flex-direction: row;
+
+      .yearBillDetailItem {
+        display: flex;
+        flex-direction: column;
+        flex: auto;
+
+        span {
+          text-align: center;
+        }
+
+      }
+    }
+  }
+
+  .yearBillContent {
+    margin-top: 10px;
+    height: 550px;
+    overflow-y: scroll;
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*":["src/*"] // vscode @提示
+    },
+    "experimentalDecorators": true,
+    "jsx": "preserve"
+  }
+}
